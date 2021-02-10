@@ -18,9 +18,11 @@
 // @material-ui/icons
 import Dashboard from "@material-ui/icons/Dashboard";
 import Person from "@material-ui/icons/Person";
+import AssignmentTurnedInOutlinedIcon from "@material-ui/icons/AssignmentTurnedInOutlined";
 // core components/views for Admin layout
 import DashboardPage from "views/Dashboard/Dashboard.js";
 import UserProfile from "views/UserProfile/UserProfile.js";
+import LogWork from "views/LogWork/LogWork";
 
 const dashboardRoutes = [
   {
@@ -35,6 +37,13 @@ const dashboardRoutes = [
     name: "User Profile",
     icon: Person,
     component: UserProfile,
+    layout: "/admin",
+  },
+  {
+    path: "/logwork",
+    name: "Log Work",
+    icon: AssignmentTurnedInOutlinedIcon,
+    component: LogWork,
     layout: "/admin",
   },
 ];
